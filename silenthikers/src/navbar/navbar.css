@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 25px;
+    gap: 30px;
+}
+.nav-buttons{
+    color: black;
+    font-weight: 100;
+}
+.navbar a{
+    text-decoration: none;
+}
