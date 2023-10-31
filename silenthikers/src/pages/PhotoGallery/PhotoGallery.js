@@ -27,15 +27,16 @@ const PhotoGallery = () => {
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % data.length);
   };
-
+  
   const previousImage = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? data.length - 1 : prevIndex - 1
+    prevIndex === 0 ? data.length - 1 : prevIndex - 1
     );
   };
-
+  
   return (
     <div>
+      <div className='rectangle'></div>
       <h1 className="photo-gallery">Photo Gallery</h1>
       {loading ? (
         <div>Loading...</div>
