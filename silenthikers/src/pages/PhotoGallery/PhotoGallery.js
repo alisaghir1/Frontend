@@ -3,7 +3,6 @@ import axios from 'axios';
 import './PhotoGallery.css';
 
 const PhotoGallery = () => {
-
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -27,16 +26,16 @@ const PhotoGallery = () => {
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % data.length);
   };
-  
+
   const previousImage = () => {
     setCurrentImageIndex((prevIndex) =>
-    prevIndex === 0 ? data.length - 1 : prevIndex - 1
+      prevIndex === 0 ? data.length - 1 : prevIndex - 1
     );
   };
-  
+
   return (
     <div>
-      <div className='rectangle'></div>
+      <div className="rectangle"></div>
       <h1 className="photo-gallery">Photo Gallery</h1>
       {loading ? (
         <div>Loading...</div>
@@ -69,8 +68,12 @@ const PhotoGallery = () => {
         </div>
       )}
       <div className="navigation-buttons">
-        <button className='previous' onClick={previousImage}>Prev</button>
-        <button className='next' onClick={nextImage}>Next</button>
+        <button className="previous" onClick={previousImage}>
+          Prev
+        </button>
+        <button className="next" onClick={nextImage}>
+          Next
+        </button>
       </div>
     </div>
   );

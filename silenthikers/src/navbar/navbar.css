@@ -1,12 +1,15 @@
 .navbar{
     display: flex;
-    margin-top: 25px;
-    margin-left: 25px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
     gap: 30px;
+    background-color: #439145;
 }
 .nav-buttons{
     color: black;
     font-weight: 100;
+    color: white;
 }
 .navbar a{
     text-decoration: none;
