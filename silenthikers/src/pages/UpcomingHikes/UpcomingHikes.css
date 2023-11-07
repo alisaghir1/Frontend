@@ -1,12 +1,11 @@
 .hikes-container {
     display: flex;
-    margin: 2% 8%;
+    margin: 6% 8%;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   
 .hike-card {
-    border: 2px solid #005214;
     border-radius: 12px;
     margin: 20px;
     width: 300px;
@@ -21,9 +20,6 @@
   }
 
 .hike-image-container {
-  margin-top: -139.5px;
-  z-index: -1;
-  position: relative;
   width: 100%;
 }
 
@@ -34,33 +30,41 @@
     object-fit: cover;
   }
   
+.hike-spots {
+  margin-left: 3%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .hike-details {
     padding: 20px;
   }
   
 .hike-header {
-    display: flex;
-    flex-direction: column;
+    margin-left: 3%;
     align-items: center;
   }
   
 .hike-name {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #97e0aa;
+    color: #005214;
   }
   
 .hike-date,
   .hike-location {
-    font-size: 16px;
+    font-size: 24px;
     color: #555;
     margin-bottom: 5px;
   }
   
 .hike-description-details {
-    font-size: 16px;
+    font-size: 20px;
     color: #555;
+    font-style: italic;
   }
   
 .hike-booking {
@@ -71,13 +75,15 @@
   }
   
 .book-btn {
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    background-color: #ffffff;
-    color: #005214;
-    border: solid 1px #005214;
+  background-color:#439145 ;
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px;
+  width: 200px;
+  margin-top: 10;
+  margin-right: 2%;
   }
   
 .book-btn:hover {
@@ -85,7 +91,11 @@
     color: #fff;
     border: none;
   }
-  
+
+.available-spots {
+    padding-right: 10px;
+}
+
 /* Media Queries */
   
 @media screen and (max-width: 1200px) {
@@ -112,6 +122,7 @@
       margin: 10px 0;
       display: flex;
       flex-wrap: wrap;
+      margin: 3% auto;
     }
   }
   
