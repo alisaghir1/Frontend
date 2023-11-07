@@ -8,9 +8,6 @@ import ContactUs from './pages/ContactUs/ContactUs'
 import Navbar from '../src/components/navbar/Navbar';
 
 
-
-
-
 const App = () => {
   const Layout = () => {
     return (

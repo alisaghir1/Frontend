@@ -19,6 +19,10 @@
     color:whitesmoke;
     width: 400px;
     font-weight: 550;
+    animation: typing 8s;
+    white-space: nowrap;
+    overflow: hidden;
+    
 }
 .register-form{
     display: flex;
@@ -75,3 +79,9 @@
     padding: 10px;
     border-radius: 5px;
   }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  

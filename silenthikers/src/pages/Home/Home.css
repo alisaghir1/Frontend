@@ -36,7 +36,6 @@
 }
 .An {
   padding-left: 100px;
-
 }
 .Unforgettable {
   color: #439145;
@@ -56,6 +55,7 @@
 .home-book:hover {
   background-color: limegreen;
   cursor: pointer;
+  transition: 0.3s;
 }
 .home-aboutus {
   display: flex;
@@ -101,7 +101,7 @@
   background-color: whitesmoke;
   margin: auto;
   padding-bottom: 100px;
-  border-radius:0px 0px 50px 50px;
+  border-radius: 0px 0px 50px 50px;
 }
 .second-h3-group {
   display: flex;
@@ -134,29 +134,11 @@
     opacity: 1;
   }
 }
-
 .Towards,
 .An,
 .Unforgettable,
 .Experience {
-  opacity: 1;
   animation: word-fade 3s ease-in-out;
-}
-
-.Towards {
-  animation-delay: 0s;
-}
-
-.An {
-  animation-delay: 0.5s;
-}
-
-.Unforgettable {
-  animation-delay: 1s;
-}
-
-.Experience {
-  animation-delay: 1.5s;
 }
 
 .Towards {
