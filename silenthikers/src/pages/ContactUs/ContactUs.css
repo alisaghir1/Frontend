@@ -14,10 +14,9 @@
     font-size: 50px;
     margin-left: 250px;
     margin-top: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-family: 'Montserrat', sans-serif;
     color:whitesmoke;
-    border-bottom: 2px solid #439145;
     width: 400px;
     font-weight: 550;
 }
@@ -30,7 +29,7 @@
     padding: 50px;
     border-radius: 50px;
     font-size: x-large;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     background-color: rgba(245, 245, 245, 0.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -64,4 +63,15 @@
 }
 .register-button:hover{
     cursor: pointer;
+    color: black;
 }
+.error-message {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(245, 245, 245, 0.326);
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+  }

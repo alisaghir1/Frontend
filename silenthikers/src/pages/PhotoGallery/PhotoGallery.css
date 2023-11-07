@@ -91,6 +91,7 @@ body {
   display: inline-block;
   border-radius: 10px;
   font-size: medium;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .custom-file-input:hover {
@@ -109,10 +110,10 @@ body {
   border-radius: 10px;
   border: none;
   font-size: medium;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .custom-upload-button:focus {
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .custom-upload-button:hover {
   outline: none;
@@ -126,6 +127,7 @@ body {
   border: 1px solid #439145;
   cursor: text;
   border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .phone-number::placeholder{
   color: #439145;
@@ -137,7 +139,9 @@ body {
   box-shadow: none;
 }
 .phone-number:hover::placeholder{
-  color: whitesmoke;
+  text-align: start;
+  box-shadow: none;
+  color: black;
 }
 .phone-number:focus::placeholder{
   outline: none;
@@ -145,4 +149,24 @@ body {
 .phone-number:focus{
   outline: none;
 }
-
+.nav-buttons-text{
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: x-large;
+}
+.nav-buttons-text a{
+  color: #439145;
+  text-decoration:none;
+}
+.photo-error-message{
+  position: absolute;
+  top: 885px;
+  left: 56%;
+  transform: translateX(-50%);
+  color: red;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid red;
+  width: 250px;
+}
