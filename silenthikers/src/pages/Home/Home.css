@@ -21,7 +21,7 @@
 }
 .rec-group {
   background-color: rgba(194, 210, 231, 0.8);
-  width: 750px;
+  width: 50%;
 }
 .home-header {
   display: flex;
@@ -30,7 +30,7 @@
   font-size: xx-large;
   margin-top: 80px;
   align-items: baseline;
-  font-size: 65px;
+  font-size: 75px;
   font-weight: 100;
   padding: 20px;
 }
@@ -39,18 +39,18 @@
 }
 .Unforgettable {
   color: #439145;
-  font-size: 70px;
+  font-size: 80px;
 }
 .home-book {
   background-color: #439145;
   color: whitesmoke;
   max-width: 100%;
-  width: 200px;
+  width: 250px;
   height: 40px;
   border: none;
   border-radius: 0px 10px 10px 0px;
   margin-top: 50px;
-  font-size: large;
+  font-size: larger;
 }
 .home-book:hover {
   background-color: limegreen;
@@ -124,4 +124,52 @@
 }
 .home-second-p-h3 {
   font-weight: 200;
+}
+@keyframes word-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Towards,
+.An,
+.Unforgettable,
+.Experience {
+  opacity: 1;
+  animation: word-fade 3s ease-in-out;
+}
+
+.Towards {
+  animation-delay: 0s;
+}
+
+.An {
+  animation-delay: 0.5s;
+}
+
+.Unforgettable {
+  animation-delay: 1s;
+}
+
+.Experience {
+  animation-delay: 1.5s;
+}
+
+.Towards {
+  animation-delay: 0s;
+}
+
+.An {
+  animation-delay: 0.5s;
+}
+
+.Unforgettable {
+  animation-delay: 1s;
+}
+
+.Experience {
+  animation-delay: 1.5s;
 }

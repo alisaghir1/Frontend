@@ -13,12 +13,12 @@ const Home = () => {
           <div className="img-rectangle"></div>
           <div className="home-header">
             <div className="home-rectangle" />
-            <div className="Towards">Towards</div>
-            <div className="An">
+            <div className="Towards animated-text">Towards</div>
+            <div className="An animated-text">
               An <span>-</span>
             </div>
-            <div className="Unforgettable">Unforgettable</div>
-            <div className="Experience">Experience</div>
+            <div className="Unforgettable animated-text">Unforgettable</div>
+            <div className="Experience animated-text">Experience</div>
           </div>
           <div className="home-aboutus">
             <Link to={'/hikes'}>
@@ -41,12 +41,26 @@ const Home = () => {
       <div className="home-second-container">
         <img src={Home2} alt="" className="home-second-photo" />
       </div>
-      <div className='home-second-p'>
-        <h1 className='home-second-p-h1'>Hiking In Lebanon</h1>
-        <h2 className='home-second-p-h2'>Hiking in Lebanon offers a unique and rewarding experience for outdoor enthusiasts. The positivity of hiking in this beautiful Middle Eastern country</h2>
+      <div className="home-second-p">
+        <h1 className="home-second-p-h1">Hiking In Lebanon</h1>
+        <h2 className="home-second-p-h2">
+          Hiking in Lebanon offers a unique and rewarding experience for outdoor
+          enthusiasts. The positivity of hiking in this beautiful Middle Eastern
+          country
+        </h2>
         <div className="second-h3-group">
-        <h3 className='home-second-p-h3'>Lebanon enjoys a Mediterranean climate, making it an excellent destination for hiking most of the year. The spring and autumn months are particularly pleasant, with mild temperatures and beautiful landscapes.</h3>
-        <h3 className='home-second-p-h3'>Lebanon's history and culture add a unique dimension to your hiking experience. You can often encounter historical sites, ancient ruins, and traditional villages along the trails, providing insight into the country's rich heritage.</h3>
+          <h3 className="home-second-p-h3">
+            Lebanon enjoys a Mediterranean climate, making it an excellent
+            destination for hiking most of the year. The spring and autumn
+            months are particularly pleasant, with mild temperatures and
+            beautiful landscapes.
+          </h3>
+          <h3 className="home-second-p-h3">
+            Lebanon's history and culture add a unique dimension to your hiking
+            experience. You can often encounter historical sites, ancient ruins,
+            and traditional villages along the trails, providing insight into
+            the country's rich heritage.
+          </h3>
         </div>
       </div>
     </div>

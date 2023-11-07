@@ -90,6 +90,7 @@ body {
   cursor: pointer;
   display: inline-block;
   border-radius: 10px;
+  font-size: medium;
 }
 
 .custom-file-input:hover {
@@ -101,12 +102,13 @@ body {
 }
 
 .custom-upload-button {
-  background-color: whitesmoke;
-  color: #439145;
+  background-color: #439145;
+  color: whitesmoke;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 10px;
   border: none;
+  font-size: medium;
 }
 .custom-upload-button:focus {
   outline: none;
@@ -117,30 +119,29 @@ body {
   color: white;
   background-color:limegreen;
 }
-input[type="text"] {
-  background-color: #439145;
-  color: #fff;
+.phone-number[type="text"] {
+  background-color: whitesmoke;
+  color: #439145;
   padding: 10px 20px;
-  border: none;
+  border: 1px solid #439145;
   cursor: text;
-  border-radius: 5px 5px 5px 5px;
-}
-
-
-.photo-input[type="text"]:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 .phone-number::placeholder{
-  color: white;
+  color: #439145;
   font-size: medium;
   text-align: center;
+  background-color: whitesmoke;
+  text-align: start;
+  opacity: 0.5;
 }
-.phone-number:hover{
-  background-color: limegreen;
+.phone-number:hover::placeholder{
+  color: whitesmoke;
+}
+.phone-number:focus::placeholder{
+  outline: none;
 }
 .phone-number:focus{
-  background-color: limegreen;
   outline: none;
 }
 

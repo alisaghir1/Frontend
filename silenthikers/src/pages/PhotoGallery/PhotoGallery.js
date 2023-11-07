@@ -100,7 +100,7 @@ const PhotoGallery = () => {
         <form className="image-form" onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Phone Number"
+            placeholder="Enter a Phone Number"
             name="phoneNumber"
             id="phoneNumberInput"
             className="phone-number"
