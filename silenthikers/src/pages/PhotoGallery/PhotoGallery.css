@@ -134,6 +134,7 @@ body {
   background-color: whitesmoke;
   text-align: start;
   opacity: 0.5;
+  box-shadow: none;
 }
 .phone-number:hover::placeholder{
   color: whitesmoke;

@@ -1,5 +1,6 @@
 import '../ContactUs/ContactUs.css';
 import axios from 'axios';
+import i32 from "../ContactUs/37.jpeg"
 
 
 const ContactUs = () => {
@@ -20,6 +21,7 @@ const ContactUs = () => {
   };
   return (
     <div className="register-container">
+      <img src={i32} alt='' className='register-img-background'/>
       <div className="register-h1">Register</div>
       <form onSubmit={handleSubmit} className="register-form">
         <label className='register-inputs-label' htmlFor="nameInput">User Name</label>

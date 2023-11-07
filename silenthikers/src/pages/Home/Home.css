@@ -27,8 +27,8 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  font-size: xx-large;
   margin-top: 80px;
+  font-size: 70px;
   align-items: baseline;
   font-size: 75px;
   font-weight: 100;
@@ -36,6 +36,7 @@
 }
 .An {
   padding-left: 100px;
+
 }
 .Unforgettable {
   color: #439145;
@@ -45,12 +46,12 @@
   background-color: #439145;
   color: whitesmoke;
   max-width: 100%;
-  width: 250px;
-  height: 40px;
+  width: 300px;
+  height: 60px;
   border: none;
   border-radius: 0px 10px 10px 0px;
   margin-top: 50px;
-  font-size: larger;
+  font-size: x-large;
 }
 .home-book:hover {
   background-color: limegreen;
