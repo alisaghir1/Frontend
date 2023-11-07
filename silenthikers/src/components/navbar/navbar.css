@@ -1,0 +1,52 @@
+/* Default styles for the navbar */
+.navbar {
+    display: flex;
+    padding: 15px;
+    gap: 30px;
+    background-color: #439145;
+    justify-content: space-between;
+  }
+  .navbar-buttons{
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-buttons {
+    font-weight: 100;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+  }
+  
+  .nav-buttons:hover {
+    color: limegreen;
+  }
+  .navbar-logo{
+    width: 200px;
+    font-size: larger;
+    height: 0px;
+    font-family:monospace;
+    color: whitesmoke;
+    margin-right: 30px;
+    font-weight: bolder;
+  }
+  .navbar-logo span{
+    color:limegreen;
+    font-size: 30px;
+  }
+  /* Media query for smaller screens (adjust the breakpoint as needed) */
+  @media (max-width: 768px) {
+    .navbar {
+        display: grid;
+      grid-template-columns: 2fr 2fr; /* Stack items vertically on smaller screens */
+      padding: 5px; /* Reduce padding for smaller screens */
+      text-align: center;
+    }
+    .nav-buttons {
+      margin: 10px 0; /* Add space between items on smaller screens */
+    }
+  }
+  

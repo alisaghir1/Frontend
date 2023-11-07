@@ -1,4 +1,4 @@
-import "../navbar/navbar.css";
+import "./navbar.css";
 import { Link } from 'react-router-dom'
 
 import React from 'react'
@@ -6,6 +6,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <nav className="navbar">
+        <div className="navbar-buttons">
         <Link to={"/"}>
             <h3 className="nav-buttons">Home</h3>
         </Link>
@@ -19,8 +20,10 @@ const Navbar = () => {
             <h3 className="nav-buttons">Frequently Asked Questions</h3>
         </Link>
         <Link to={"/ContactUs"}>
-            <h3 className="nav-buttons">Contact Us</h3>
+            <h3 className="nav-buttons">Register</h3>
         </Link>
+        </div>
+         <h3 className="navbar-logo">Silent<span>H</span>ikerS</h3>
     </nav>
   )
 }

@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './PhotoGallery.css';
 
 const PhotoGallery = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     setLoading(true);
@@ -13,15 +14,12 @@ const PhotoGallery = () => {
       .then((response) => {
         setData(response.data);
         setLoading(false);
-        console.log(response.data);
       })
       .catch((err) => {
         console.log(err);
         setLoading(false);
       });
   }, []);
-
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % data.length);
@@ -33,6 +31,44 @@ const PhotoGallery = () => {
     );
   };
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    // Get the form data
+    const formData = new FormData();
+    formData.append('image', event.target.elements.fileInput.files[0]);
+    formData.append('phoneNumber', event.target.elements.phoneNumberInput.value);
+    try {
+      // Make the POST request
+         await axios.post(
+        'http://localhost:8080/api/images',
+        formData,
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        }
+      );
+
+      // Refresh the gallery by fetching the updated data
+      setLoading(true);
+      axios
+        .get('http://localhost:8080/api/images')
+        .then((response) => {
+          setData(response.data);
+          setLoading(false);
+        })
+        .catch((err) => {
+          console.log(err);
+          setLoading(false);
+        });
+
+      // Clear the form
+      event.target.reset();
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div>
       <div className="rectangle"></div>
@@ -41,17 +77,10 @@ const PhotoGallery = () => {
         <div>Loading...</div>
       ) : (
         <div className="gallery-container">
-          <div className="big-image">
-            <img
-              className="image-big"
-              src={`http://localhost:8080/${data[currentImageIndex]?.image}`}
-              alt={`pic ${currentImageIndex}`}
-            />
-          </div>
           <div className="small-images">
             {data
               .filter((_, index) => index !== currentImageIndex)
-              .slice(0, 2) // Display the first two smaller images
+              .slice(0, 3) // Display the first two smaller images
               .map((item, index) => (
                 <div key={index}>
                   <img
@@ -68,12 +97,35 @@ const PhotoGallery = () => {
         </div>
       )}
       <div className="navigation-buttons">
-        <button className="previous" onClick={previousImage}>
-          Prev
-        </button>
-        <button className="next" onClick={nextImage}>
-          Next
-        </button>
+        <form className="image-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Phone Number"
+            name="phoneNumber"
+            id="phoneNumberInput"
+            className="phone-number"
+          />
+          <label htmlFor="fileInput" className="custom-file-input">
+            Choose a Photo
+          </label>
+          <input
+            className="photo-input"
+            type="file"
+            accept="image/*"
+            id="fileInput"
+          />
+          <button type="submit" className="custom-upload-button">
+            Upload Photo
+          </button>
+        </form>
+        <div className="nav-buttons">
+          <button className="previous" onClick={previousImage}>
+            Prev
+          </button>
+          <button className="next" onClick={nextImage}>
+            Next
+          </button>
+        </div>
       </div>
     </div>
   );
