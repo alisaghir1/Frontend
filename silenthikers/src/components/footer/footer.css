@@ -1,0 +1,46 @@
+footer {
+    margin-top: 3%;
+    background-color: #005214;
+    color: whitesmoke;
+}
+
+.footer-content {
+    margin-left: 60%;
+}
+
+.spans {
+    display: flex;
+    padding: 2%;
+}
+
+.socialmedia-icons{
+    margin: 0 5%;
+
+}
+
+.footer span {
+    margin-left: 20px;
+}
+
+.footer-content h3 {
+    border-bottom: 1px solid whitesmoke;
+    width: fit-content;
+    margin-right: 20px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+.copy-div {
+    margin: auto;
+    background-color: #005214;
+    color: whitesmoke;
+    align-items: center;
+    padding: 1% 0;
+}
+
+.copy-div span {
+    margin-left: 45%;
+}

@@ -5,7 +5,8 @@ import PhotoGallery from './pages/PhotoGallery/PhotoGallery'
 import Questions from './pages/Questions/Questions'
 import UpcomingHikes from './pages/UpcomingHikes/UpcomingHikes'
 import ContactUs from './pages/ContactUs/ContactUs'
-import Navbar from '../src/components/navbar/Navbar';
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 
 
 const App = () => {
@@ -14,9 +15,11 @@ const App = () => {
       <>
       <Navbar />
       <Outlet />
+      <Footer />
       </>
     )
   }
+  
   return (
     <Routes>
       <Route path='/' element={<Layout />} >
