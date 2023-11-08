@@ -1,7 +1,8 @@
 footer {
-    margin-top: 3%;
-    background-color: #005214;
     color: whitesmoke;
+    background-color: #439145;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-content {

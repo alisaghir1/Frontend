@@ -17,10 +17,10 @@ const Footer = () => {
                     <FaYoutube className='socialmedia-icons' size={32} />
                 </div>
             </div>
-        </footer>
         <div className='copy-div'>
             <span>&copy;2023 All rights reserved</span>
         </div>
+        </footer>
     </>
   )
 }
