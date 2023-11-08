@@ -1,37 +1,46 @@
 .hikes-container {
-    display: flex;
-    margin: 6% 8%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
+  display: flex;
+  margin: 5% 8%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.upcoming-header {
+  font-size: 50px;
+  margin-left: 250px;
+  margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  border-bottom: 2px solid #439145;
+  width: 500px;
+  font-weight: 400;
+}
 .hike-card {
-    border-radius: 12px;
-    margin: 20px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-    flex: 1;
-    z-index: 1;
-  }
-  
+  border-radius: 12px;
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  flex: 1;
+  z-index: 1;
+}
+
 .hike-card:hover {
-    transform: translateY(-5px);
-  }
+  transform: translateY(-5px);
+}
 
 .hike-image-container {
   width: 100%;
 }
 
 .hike-image {
-    width: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    object-fit: cover;
-    height: 500px;
-    max-height: 100%;
-  }
-  
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  object-fit: cover;
+  height: 400px;
+  max-height: 100%;
+}
+
 .hike-spots {
   margin-left: 3%;
   font-size: 20px;
@@ -41,90 +50,140 @@
 }
 
 .hike-details {
-    padding: 20px;
-  }
-  
+  padding: 20px;
+}
+
 .hike-header {
-    margin-left: 3%;
-    align-items: center;
-  }
-  
+  margin-left: 3%;
+  align-items: center;
+}
+
 .hike-name {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #439145;
-  }
-  
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #439145;
+}
+
 .hike-date,
-  .hike-location {
-    font-size: 24px;
-    color: #555;
-    margin-bottom: 5px;
-  }
-  
+.hike-location {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
 .hike-description-details {
-    font-size: 20px;
-    color: #555;
-    font-style: italic;
-  }
-  
+  font-size: 20px;
+  color: #555;
+  font-style: italic;
+}
+
 .hike-booking {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-  }
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+.available-spots {
+  padding-right: 10px;
+}
 .book-btn {
-  background-color:#439145 ;
+  background-color: #439145;
   color: whitesmoke;
   border: none;
   border-radius: 10px;
   font-size: large;
-  padding: 10px;
-  width: 30%;
-  margin-top: 10;
-  margin-right: 2%;
-  }
-  
+  padding: 10px 20px;
+  width: auto;
+  margin-top: 10px;
+}
 .book-btn:hover {
-    background-color: #005214;
-    color: #fff;
-    border: none;
-  }
-
-.available-spots {
-    padding-right: 10px;
+  background-color: #005214;
+  color: #fff;
+  border: none;
 }
 
-/* Media Queries */
-  
+.form-input {
+  background-color: #439145;
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px 20px;
+  width: auto;
+}
+.form-input::placeholder{
+  background-color: #439145;
+  color: whitesmoke;
+  font-size: medium;
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+.form-submit {
+  background-color: #439145;
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px 20px;
+  width: auto;
+}
+.form-cancel{
+  background-color: whitesmoke;
+  color: red;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px 20px;
+  width: auto;
+  margin-bottom: 10px;
+  border: 1px solid;
+}
+.form-submit{
+  background-color: #439145;
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px 20px;
+  width: auto;
+  margin-bottom: 10px;
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.submit-cancel{
+  display: flex;
+  gap: 20px;
+}
+
 @media screen and (max-width: 1200px) {
-    .hikes-container {
-      margin: 2% 5%;
-      display: flex;
-      flex-wrap: wrap;
-    }
+  .hikes-container {
+    margin: 2% 5%;
+    display: flex;
+    flex-wrap: wrap;
   }
-  
+}
+
 @media screen and (max-width: 768px) {
-    .hike-card {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
+  .hike-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
-  
+}
+
 @media screen and (max-width: 480px) {
-    .hikes-container {
-      display: block;
-    }
-    .hike-card {
-      margin: 10px 0;
-      display: block;
-      margin: 3% auto;
-      width: 80%;
-    }
+  .hikes-container {
+    display: block;
   }
-  
+  .hike-card {
+    margin: 10px 0;
+    display: block;
+    margin: 3% auto;
+    width: 80%;
+  }
+}

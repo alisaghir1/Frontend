@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
-const FormButton = () => {
+  const FormButton = () => {
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
     hikeName: '',
     phoneNumber: '',
   });
 
-  const handleButtonClick = () => {
+   const handleButtonClick = () => {
     setShowForm(true);
   };
 
@@ -34,11 +34,13 @@ const FormButton = () => {
 
   return (
     <div>
-      <button onClick={handleButtonClick}>Show Form</button>
+      <button className='book-btn' onClick={handleButtonClick}>Book Now</button>
       {showForm && (
-        <form onSubmit={handleFormSubmit}>
+        <form className='form-container' onSubmit={handleFormSubmit}>
           <label htmlFor="hikeName">Hike Name</label>
           <input
+          placeholder='Enter your name'
+            className='form-input '
             type="text"
             id="hikeName"
             hikeName="hikeName"
@@ -48,6 +50,8 @@ const FormButton = () => {
           <br />
           <label htmlFor="phoneNumber">Phone Number</label>
           <input
+          placeholder='Enter your phone number'
+          className='form-input'
             type="phoneNumber"
             id="phoneNumber"
             hikeName="phoneNumber"
@@ -55,10 +59,12 @@ const FormButton = () => {
             onChange={handleInputChange}
           />
           <br />
-          <input type="submit" value="Submit" />
-          <button type="button" onClick={handleCancelClick}>
+          <div className="submit-cancel">
+          <input type="submit" value="Submit" className='form-submit' />
+          <button className='form-cancel' type="button" onClick={handleCancelClick}>
             Cancel
           </button>
+          </div>
         </form>
       )}
     </div>
