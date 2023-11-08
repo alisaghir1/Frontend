@@ -64,6 +64,7 @@ const PhotoGallery = () => {
           },
         }
       );
+      setErrorMessage('uploading successful!!');
       // Refresh the gallery by fetching the updated data
       setLoading(true);
       axios
