@@ -6,7 +6,7 @@ body {
 .rectangle {
   width: 100%;
   height: 310px;
-  background-color: #439146ad;
+  background-color: rgba(227, 227, 227, 0.791);;
   position: absolute;
   top: 220px;
   z-index: -1;

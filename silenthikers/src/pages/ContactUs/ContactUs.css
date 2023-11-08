@@ -73,7 +73,7 @@
 }
 .error-message {
     position: absolute;
-    top: 92%;
+    top: 810px;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(245, 245, 245, 0.326);

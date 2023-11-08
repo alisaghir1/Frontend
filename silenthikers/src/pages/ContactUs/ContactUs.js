@@ -40,7 +40,7 @@ const ContactUs = () => {
     try {
       await axios.post('http://localhost:8080/api/users', userData);
       event.target.reset();
-      setErrorMessage('');
+      setErrorMessage('Registration successful!!');
     } catch (error) {
       console.error(error);
     }
