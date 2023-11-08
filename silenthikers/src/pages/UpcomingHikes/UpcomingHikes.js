@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './UpcomingHikes.css';
 import { FaMapMarkerAlt, FaCalendarAlt, FaUsers } from 'react-icons/fa';
-import chowen from './chowen.jpeg'
 
 const UpcomingHikes = () => {
   const [hikesData, setHikesData] = useState([]);
@@ -34,7 +33,7 @@ const UpcomingHikes = () => {
           {imagesData.length > 0 && (
             <div className='hike-image-container'>
               <img
-                src={chowen}
+                src={`http://localhost:8080/${hike.image}`}
                 alt={imagesData[index % imagesData.length].imageName}
                 className='hike-image'
               />
