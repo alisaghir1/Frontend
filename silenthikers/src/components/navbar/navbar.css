@@ -16,6 +16,10 @@
     color: white;
     transition: color 0.3s;
   }
+
+  .nav-links {
+    display: flex;
+  }
   
   .navbar a {
     text-decoration: none;
@@ -36,16 +40,18 @@
     color:limegreen;
     font-size: 30px;
   }
-  /* Media query for smaller screens (adjust the breakpoint as needed) */
-  @media (max-width: 768px) {
-    .navbar {
-        display: grid;
-      grid-template-columns: 2fr 2fr; /* Stack items vertically on smaller screens */
-      padding: 5px; /* Reduce padding for smaller screens */
-      text-align: center;
-    }
-    .nav-buttons {
-      margin: 10px 0; /* Add space between items on smaller screens */
-    }
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+@media screen and (max-width: 440px) {
+  .navbar {
+    display: block;
+ /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+    padding: 10px; /* Adjust padding for smaller screens */
   }
+  .nav-links{
+    margin: 10px 0; /* Add space between items on smaller screens */
+    display: block;
+  }
+}
+
   
