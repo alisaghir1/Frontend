@@ -14,6 +14,19 @@
   width: 500px;
   font-weight: 400;
 }
+.upcoming-buttons-text{
+  font-size: large;
+  margin-left: 260px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  width: 500px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.upcoming-buttons-text a{
+  text-decoration: none;
+  color: #439145;
+}
 .hike-card {
   border-radius: 12px;
   margin: 20px;
@@ -96,6 +109,8 @@
   padding: 10px 20px;
   width: auto;
   margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 .book-btn:hover {
   background-color: #005214;
@@ -109,8 +124,10 @@
   border: none;
   border-radius: 10px;
   font-size: large;
-  padding: 10px 20px;
+  padding: 10px 10px;
   width: auto;
+  margin-top: 10px;
+  outline: none;
 }
 .form-input::placeholder{
   background-color: #439145;
@@ -118,8 +135,35 @@
   font-size: medium;
   box-shadow: none;
   opacity: 0.5;
+  outline: none;
 }
 
+.form-input[type="text"]::placeholder{
+  font-size: 15px;
+  background-color: #439145;
+  color: whitesmoke;
+  outline: none;
+}
+.form-input-hike{
+  background-color: whitesmoke;
+  color: #439145;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px 20px;
+  width: auto;
+  margin-top: 10px;
+  outline: none;
+}
+
+.form-input-hike[value]{
+  font-size: 20px;
+  background-color: whitesmoke;
+  color: #439145;
+  outline: none;
+  cursor: pointer;
+  caret-color: transparent;
+}
 .form-submit {
   background-color: #439145;
   color: whitesmoke;
@@ -128,8 +172,10 @@
   font-size: large;
   padding: 10px 20px;
   width: auto;
+  cursor: pointer;
 }
 .form-cancel{
+  cursor: pointer;
   background-color: whitesmoke;
   color: red;
   border: none;
@@ -159,6 +205,22 @@
   display: flex;
   gap: 20px;
 }
+.form-input::placeholder {
+  color: #439145;
+  opacity: 1;
+ }
+ .form-input:hover::placeholder {
+  color: #005214;
+ }
+ 
+ .form-submit:hover {
+  background-color: #005214;
+ }
+ .form-cancel:hover {
+  background-color: #ff0000;
+  border-color: #ff0000;
+  color: whitesmoke;
+ }
 
 @media screen and (max-width: 1200px) {
   .hikes-container {

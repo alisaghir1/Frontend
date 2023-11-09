@@ -95,7 +95,7 @@ const PhotoGallery = () => {
         <div>Loading...</div>
       ) : (
         <div className="gallery-container">
-      <div className="nav-buttons-text">Not <Link to={'/ContactUs'}>Registered?</Link> Register and Share Your Experience With Us</div>
+      <div className="nav-buttons-text">Share Your Experience With Us<Link to={'/ContactUs'}> Register </Link>with SilentHikers</div>
           <div className="small-images">
             {data
               .filter((_, index) => index !== currentImageIndex)

@@ -12,6 +12,7 @@ body {
   z-index: -1;
 }
 .photo-gallery {
+  display: flex;
   font-size: 50px;
   margin-left: 250px;
   margin-top: 60px;
@@ -27,9 +28,11 @@ body {
 .small-images {
   display: flex;
   justify-content: space-around;
-
+  flex-wrap: wrap;
+  margin: 0px 20px;
 }
 .image-small {
+  margin-top: 10px;
   width: 600px;
   height: 500px;
   border-radius: 90px;
