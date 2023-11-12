@@ -5,7 +5,6 @@
     width: 100%;
 }
 .register-img-background{
-    background-image: url(37.jpeg);
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -15,7 +14,7 @@
     bottom: 0;
 }
 .register-h1{
-    font-size: 50px;
+    font-size: 3.125rem;
     margin-left: 15%;
     margin-top: 60px;
     margin-bottom: 40px;
@@ -36,7 +35,7 @@
     margin: auto;
     padding: 50px;
     border-radius: 50px;
-    font-size: x-large;
+    font-size: 1.5rem;
     margin-bottom: 30px;
     background-color: rgba(245, 245, 245, 0.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -46,7 +45,7 @@
     outline: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
-    font-size: larger;
+    font-size: 1.125rem;
     padding: 10px;
 }
 .register-name-input[type=text],.register-PhoneNumber-input[type=text],.register-email-input[type=text]{
@@ -58,7 +57,7 @@
     height: fit-content;
     width: 25%;
     margin: auto;
-    font-size: larger;
+    font-size: 1.5rem;
     background-color: #43914686;
     color: whitesmoke;
     border: none;
@@ -69,7 +68,7 @@
     width: 30%;
     font-family:'Courier New', Courier, monospace;
     color: whitesmoke;
-    font-size: xx-large;
+    font-size: 2rem;
 }
 .register-button:hover{
     cursor: pointer;
@@ -89,13 +88,4 @@
   @keyframes typing {
     from { width: 0; }
     to { width: 70%; }
-  }
-  @media (max-width:400px){
-    .register-img-background{
-        height: 170%;
-    }
-    .register-button{
-        width: 120px;
-    }
-    
   }

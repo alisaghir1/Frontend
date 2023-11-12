@@ -37,7 +37,7 @@
   }
   .navbar-logo span{
     color:limegreen;
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 /* Media query for smaller screens (adjust the breakpoint as needed) */
 @media (max-width: 500px) {

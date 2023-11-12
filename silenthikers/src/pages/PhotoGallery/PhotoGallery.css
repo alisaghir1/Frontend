@@ -13,7 +13,7 @@ body {
 }
 .photo-gallery {
   display: flex;
-  font-size: 50px;
+  font-size: 3.125rem;
   margin-left: 10%;
   margin-top: 60px;
   margin-bottom: 50px;
@@ -99,12 +99,12 @@ body {
   cursor: pointer;
   display: inline-block;
   border-radius: 10px;
-  font-size: medium;
+  font-size: 1rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .custom-file-input:hover {
-  background-color: limegreen;
+  background-color:  #268e29;
   transition: 0.3s;
 }
 .custom-file-input:focus {
@@ -119,7 +119,7 @@ body {
   cursor: pointer;
   border-radius: 10px;
   border: none;
-  font-size: medium;
+  font-size: 1rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .custom-upload-button:focus {
@@ -128,7 +128,7 @@ body {
 .custom-upload-button:hover {
   outline: none;
   color: white;
-  background-color:limegreen;
+  background-color: limegreen;
   transition: 0.3s;
 }
 .phone-number[type="text"] {
@@ -142,7 +142,7 @@ body {
 }
 .phone-number::placeholder{
   color: #439145;
-  font-size: medium;
+  font-size: 1rem;
   text-align: center;
   background-color: whitesmoke;
   text-align: start;
@@ -164,7 +164,7 @@ body {
 .nav-buttons-text{
   margin-bottom: 20px;
   text-align: center;
-  font-size: x-large;
+  font-size: 1.5rem;
 }
 .nav-buttons-photo{
   width: 20%;

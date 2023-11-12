@@ -28,7 +28,7 @@
   flex-direction: column;
   gap: 40px;
   margin-top: 80px;
-  font-size: 70px;
+  font-size: 4.375rem;
   align-items: baseline;
   font-size: 75px;
   font-weight: 100;
@@ -39,7 +39,7 @@
 }
 .Unforgettable {
   color: #439145;
-  font-size: 80px;
+  font-size: 5rem;
 }
 .home-book {
   background-color: #439145;
@@ -50,7 +50,7 @@
   border: none;
   border-radius: 0px 10px 10px 0px;
   margin-top: 50px;
-  font-size: x-large;
+  font-size: 1.5rem;
 }
 .home-book:hover {
   background-color: limegreen;
@@ -68,7 +68,7 @@
 }
 .photo-aboutus {
   padding-right: 50px;
-  font-size: 20px;
+  font-size: 3.3rem;
   font-weight: 100;
   text-align: center;
 }
@@ -162,7 +162,7 @@
     height: 1810px;
   }
   .Unforgettable{
-    font-size: 45px;
+    font-size: 2.8125rem;
   }
 
   .home-overlap-group {
@@ -183,7 +183,7 @@
     width: 100%;
   }
   .home-header {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: 0;
     gap: 0px;
   }
@@ -195,7 +195,7 @@
     width: 100%;
     padding: 200px;
     margin-top: -240px;
-    font-size: 17px;
+    font-size: 1rem;
 
   }
   .home-book {
@@ -209,12 +209,12 @@
   }
   .home-second-p-h1 {
     margin-top: -380px;
-    font-size: 25px;
+    font-size: 1.5rem;
     width: 80%;
     text-align: center;
 }
 .home-second-p-h2{
-  font-size: 19px;
+  font-size: 1.1875rem;
   width: 100%;
   margin-right: 0px;
   text-align: center;
@@ -223,7 +223,7 @@
   animation-delay: 0.5s;
 }
 .home-second-p-h3{
-  font-size: 15px;
+  font-size: 1rem;
   width: 100%;
   text-align: center;
 }
@@ -241,7 +241,7 @@
     height: auto;
   }
   .Unforgettable{
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
 .Experience {
@@ -266,7 +266,7 @@
   }
 
   .home-header {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-top: 0px;
     gap: 0px;
   }
@@ -280,7 +280,7 @@
     width: 100%;
     padding: 200px;
     margin-top: -240px;
-    font-size: 13px;
+    font-size: 0.8125rem;
 
   }
   .home-book {
@@ -295,16 +295,16 @@
   }
   .home-second-p-h1 {
     margin-top: -380px;
-    font-size: 25px;
+    font-size: 1.5rem;
     width: 80%;
 }
 .home-second-p-h2{
-  font-size: 14px;
+  font-size: 0.875rem;
   width: 100%;
   margin-right: 0px;
 }
 .home-second-p-h3{
-  font-size: 14px;
+  font-size: 0.875rem;
   width: 100%;
 }
 .second-h3-group{
