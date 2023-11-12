@@ -3,6 +3,7 @@ import axios from 'axios';
 import './UpcomingHikes.css';
 import { FaMapMarkerAlt, FaCalendarAlt, FaUsers } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Form from '../../components/form/Form';
 
 const UpcomingHikes = () => {
   const [hikesData, setHikesData] = useState([]);
@@ -16,59 +17,6 @@ const UpcomingHikes = () => {
         console.log(error);
       });
   }, []);
-
-  /////////////////////////////////////////////////////////////////////////////////////////////////////
-  const [showForm, setShowForm] = useState({});
-  const [formData, setFormData] = useState({});
-  const [errorMessage, setErrorMessage] = useState('');
-
-  useEffect(() => {
-    let timer;
-    if (errorMessage) {
-      timer = setTimeout(() => {
-        setErrorMessage('');
-      }, 1000); // clear error message after 3 seconds
-    }
-    return () => clearTimeout(timer); // clear timer if the component unmounts
-  }, [errorMessage]);
-
-  const handleButtonClick = (hikeId) => {
-    setShowForm((prevState) => ({ ...prevState, [hikeId]: true }));
-  };
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-
-    const hikeName = event.target.elements.hikeName.value;
-    const phoneNumber = event.target.elements.phoneNumber.value;
-
-    if (!phoneNumber) {
-      setErrorMessage('Please provide a  valid phoneNumber.');
-      return;
-    }
-    const userData = {
-      hikeName,
-      phoneNumber,
-    };
-    try {
-      await axios.post('http://localhost:8080/api/bookings', userData);
-      event.target.reset();
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  const handleCancelClick = (hikeId) => {
-    setShowForm((prevState) => ({ ...prevState, [hikeId]: false }));
-    setFormData({});
-  };
-  const handleInputChange = (event) => {
-    setFormData({
-      ...formData,
-      [event.target.hikeName]: event.target.value,
-      [event.target.phoneNumber]: event.target.value,
-    });
-  };
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   return (
     <>
@@ -110,58 +58,7 @@ const UpcomingHikes = () => {
                 Spots: {hike.availableSpots}
                 <FaUsers />{' '}
               </p>
-              {/*////////////////////////////////////////////////////////////////////////////////////*/}
-              <div>
-                <button
-                  className="book-btn"
-                  onClick={() => handleButtonClick(hike._id)}
-                >
-                  Book Now
-                </button>
-                {showForm[hike._id] && (
-                  <form className="form-container" onSubmit={handleFormSubmit}>
-                    <label htmlFor="hikeName">Hike Name</label>
-                    <input
-                      placeholder="Enter your name"
-                      className="form-input-hike"
-                      type="text"
-                      id="hikeName"
-                      hikeName="hikeName"
-                      value={hike.hikeName}
-                      onChange={handleInputChange}
-                    />
-                    <br />
-                    <label htmlFor="phoneNumber">Phone Number</label>
-                    <input
-                      placeholder="Enter your phone number"
-                      className="form-input"
-                      type="text"
-                      id="phoneNumber"
-                      hikeName="phoneNumber"
-                      onChange={handleInputChange}
-                    />
-                    <br />
-                    <div className="submit-cancel">
-                      <input
-                        type="submit"
-                        value="Submit"
-                        className="form-submit"
-                      />
-                      <button
-                        className="form-cancel"
-                        type="button"
-                        onClick={() => handleCancelClick(hike._id)}
-                      >
-                        Cancel
-                      </button>
-                    </div>
-                  </form>
-                )}
-              </div>
-              {errorMessage && (
-                <div className="error-message">{errorMessage}</div>
-              )}
-              {/*////////////////////////////////////////////////////////////////////////////////////*/}
+            <Form hike={hike}/>
             </div>
           </div>
         ))}

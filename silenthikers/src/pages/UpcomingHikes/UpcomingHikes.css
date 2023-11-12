@@ -103,127 +103,69 @@
 .available-spots {
   padding-right: 10px;
 }
-.book-btn {
+.book-btn{
   background-color: #439145;
   color: whitesmoke;
-  border: none;
   border-radius: 10px;
-  font-size: large;
-  padding: 10px 20px;
-  width: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 10vw;
+  height: 4vh;
+  border: none;
+  font-size: 1rem;
+}
+.form-input-hike{
+  width: 10vw;
+  height: 3.5vh;
+  background-color: whitesmoke;
+  caret-color: transparent;
   cursor: pointer;
-}
-.book-btn:hover {
-  background-color: #005214;
-  color: #fff;
+  color: #439145;
   border: none;
+  padding: 10px;
+  outline: none;
 }
-
-.form-input {
+.form-input{
+  width: 10vw;
+  height: 3.5vh;
   background-color: #439145;
   color: whitesmoke;
-  border: none;
   border-radius: 10px;
-  font-size: large;
-  padding: 10px 10px;
-  width: auto;
-  margin-top: 10px;
+  border: none;
   outline: none;
+  font-size: 0.8rem;
 }
 .form-input::placeholder{
   background-color: #439145;
-  color: whitesmoke;
-  font-size: medium;
-  box-shadow: none;
-  opacity: 0.5;
-  outline: none;
 }
-
-.form-input[type="text"]::placeholder{
-  font-size: 15px;
+.form-input[type='text']{
   background-color: #439145;
-  color: whitesmoke;
-  outline: none;
-}
-.form-input-hike{
-  background-color: whitesmoke;
-  color: #439145;
-  border: none;
-  border-radius: 10px;
-  font-size: large;
-  padding: 10px 20px;
-  width: auto;
-  margin-top: 10px;
-  outline: none;
-}
-
-.form-input-hike[value]{
-  font-size: 20px;
-  background-color: whitesmoke;
-  color: #439145;
-  outline: none;
-  cursor: pointer;
-  caret-color: transparent;
-}
-.form-submit {
-  background-color: #439145;
-  color: whitesmoke;
-  border: none;
-  border-radius: 10px;
-  font-size: large;
-  padding: 10px 20px;
-  width: auto;
-  cursor: pointer;
-}
-.form-cancel{
-  cursor: pointer;
-  background-color: whitesmoke;
-  color: red;
-  border: none;
-  border-radius: 10px;
-  font-size: large;
-  padding: 10px 20px;
-  width: auto;
-  margin-bottom: 10px;
-  border: 1px solid;
 }
 .form-submit{
   background-color: #439145;
-  color: whitesmoke;
+  width: 5vw;
+  height: 3.5vh;
   border: none;
   border-radius: 10px;
-  font-size: large;
-  padding: 10px 20px;
-  width: auto;
-  margin-bottom: 10px;
+  color: whitesmoke;
 }
-.form-container{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.close-form{
+  background-color: whitesmoke;
+  width: 5vw;
+  height: 3.5vh;
+  border: 1px solid #439145;
+  border-radius: 10px;
+  color: #439145;
 }
 .submit-cancel{
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  margin-bottom: 10px;
 }
-.form-input::placeholder {
-  color: #439145;
-  opacity: 1;
- }
- .form-input:hover::placeholder {
-  color: #005214;
- }
- 
- .form-submit:hover {
-  background-color: #005214;
- }
- .form-cancel:hover {
-  background-color: #ff0000;
-  border-color: #ff0000;
-  color: whitesmoke;
- }
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
 
 @media screen and (max-width: 1200px) {
   .hikes-container {
