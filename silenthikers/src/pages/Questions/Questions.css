@@ -1,12 +1,12 @@
 .questions-header{
     font-size: 50px;
-    margin-left: 250px;
+    margin-left: 10%;
     margin-top: 60px;
     margin-bottom: 50px;
     font-family: 'Montserrat', sans-serif;
     color:black;
     border-bottom: 2px solid #439145;
-    width: 800px;
+    width: 40%;
     font-weight: 400;
     animation: slideInRight 1s ease-in;
 }

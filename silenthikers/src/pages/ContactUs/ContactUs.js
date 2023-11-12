@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../ContactUs/ContactUs.css';
 import axios from 'axios';
-import i32 from '../ContactUs/37.jpeg';
 
 const ContactUs = () => {
   const [errorMessage, setErrorMessage] = useState('');
@@ -48,7 +47,7 @@ const ContactUs = () => {
 
   return (
     <div className="register-container">
-      <img src={i32} alt="" className="register-img-background" />
+      <div className="register-img-background"></div>
       <div className="register-h1">Register</div>
       {errorMessage && <div className="error-message">{errorMessage}</div>}
       <form onSubmit={handleSubmit} className="register-form">

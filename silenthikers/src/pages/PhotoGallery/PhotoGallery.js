@@ -138,7 +138,7 @@ const PhotoGallery = () => {
           </button>
           {errorMessage && <div className="photo-error-message">{errorMessage}</div>}
         </form>
-        <div className="nav-buttons">
+        <div className="nav-buttons-photo">
           <button className="previous" onClick={previousImage}>
             Prev
           </button>

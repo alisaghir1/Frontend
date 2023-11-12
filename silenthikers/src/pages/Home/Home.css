@@ -156,3 +156,161 @@
 .Experience {
   animation-delay: 1.5s;
 }
+
+@media (max-width: 1024px) {
+  .home-desktop {
+    height: 1810px;
+  }
+  .Unforgettable{
+    font-size: 45px;
+  }
+
+  .home-overlap-group {
+    height:fit-content;
+    flex-direction: column;
+  }
+
+  .home-img {
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-top: 0px;
+    display: flex;
+  }
+
+  .rec-group {
+    width: 100%;
+  }
+  .home-header {
+    font-size: 40px;
+    margin-top: 0;
+    gap: 0px;
+  }
+  .home-aboutus {
+    flex-direction: column;
+    align-items: center;
+  }
+  .photo-aboutus {
+    width: 100%;
+    padding: 200px;
+    margin-top: -240px;
+    font-size: 17px;
+
+  }
+  .home-book {
+    margin-top:-100px;
+    margin-left: 300px;
+    border-radius: 10px;
+  }
+  .home-second-photo {
+    width: 75%;
+    height: 75%;
+  }
+  .home-second-p-h1 {
+    margin-top: -380px;
+    font-size: 25px;
+    width: 80%;
+    text-align: center;
+}
+.home-second-p-h2{
+  font-size: 19px;
+  width: 100%;
+  margin-right: 0px;
+  text-align: center;
+}
+.An {
+  animation-delay: 0.5s;
+}
+.home-second-p-h3{
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+}
+.Unforgettable {
+  animation-delay: 1s;
+}
+.second-h3-group{
+   margin-right: 0px;
+   width: 100%;
+   gap: 0px;
+}}
+/* Add responsive styles for mobile devices */
+@media (max-width: 425px) {
+  .home-desktop {
+    height: auto;
+  }
+  .Unforgettable{
+    font-size: 30px;
+  }
+
+.Experience {
+  animation-delay: 1.5s;
+}
+  .home-overlap-group {
+    height:fit-content;
+    flex-direction: column;
+  }
+
+  .home-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-top: 0px;
+    display: flex;
+  }
+
+  .rec-group {
+    width: 100%;
+  }
+
+  .home-header {
+    font-size: 24px;
+    margin-top: 0px;
+    gap: 0px;
+  }
+
+  .home-aboutus {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-aboutus {
+    width: 100%;
+    padding: 200px;
+    margin-top: -240px;
+    font-size: 13px;
+
+  }
+  .home-book {
+    margin-top:0px;
+    border-radius: 10px;
+    margin-left: 0px;
+  }
+  .home-second-photo {
+    width: 255px;
+    height: auto;
+    margin-top: -300px;
+  }
+  .home-second-p-h1 {
+    margin-top: -380px;
+    font-size: 25px;
+    width: 80%;
+}
+.home-second-p-h2{
+  font-size: 14px;
+  width: 100%;
+  margin-right: 0px;
+}
+.home-second-p-h3{
+  font-size: 14px;
+  width: 100%;
+}
+.second-h3-group{
+   margin-right: 0px;
+   width: 100%;
+   gap: 0px;
+}
+}
+

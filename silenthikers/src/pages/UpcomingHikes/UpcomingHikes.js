@@ -22,6 +22,16 @@ const UpcomingHikes = () => {
   const [formData, setFormData] = useState({});
   const [errorMessage, setErrorMessage] = useState('');
 
+  useEffect(() => {
+    let timer;
+    if (errorMessage) {
+      timer = setTimeout(() => {
+        setErrorMessage('');
+      }, 1000); // clear error message after 3 seconds
+    }
+    return () => clearTimeout(timer); // clear timer if the component unmounts
+  }, [errorMessage]);
+
   const handleButtonClick = (hikeId) => {
     setShowForm((prevState) => ({ ...prevState, [hikeId]: true }));
   };
@@ -148,7 +158,9 @@ const UpcomingHikes = () => {
                   </form>
                 )}
               </div>
-              {errorMessage && <div className="error-message">{errorMessage}</div>}
+              {errorMessage && (
+                <div className="error-message">{errorMessage}</div>
+              )}
               {/*////////////////////////////////////////////////////////////////////////////////////*/}
             </div>
           </div>
