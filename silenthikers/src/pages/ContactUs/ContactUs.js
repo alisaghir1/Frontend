@@ -38,7 +38,7 @@ const ContactUs = () => {
     };
 
     try {
-      await axios.post('http://localhost:8080/api/users', userData);
+      await axios.post('https://silent-hikers1-o1fr.onrender.com/api/users', userData);
       event.target.reset();
       setErrorMessage('Registration successful!!');
     } catch (error) {

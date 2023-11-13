@@ -9,7 +9,7 @@ const UpcomingHikes = () => {
   const [hikesData, setHikesData] = useState([]);
   useEffect(() => {
     axios
-      .get('http://localhost:8080/api/hikes')
+      .get('https://silent-hikers1-o1fr.onrender.com/api/hikes')
       .then((response) => {
         setHikesData(response.data);
       })
@@ -31,7 +31,7 @@ const UpcomingHikes = () => {
             {hikesData.length > 0 && (
               <div className="hike-image-container">
                 <img
-                  src={`http://localhost:8080/${hike.image}`}
+                  src={`https://silent-hikers1-o1fr.onrender.com/${hike.image}`}
                   alt={hikesData[index % hikesData.length].imageName}
                   className="hike-image"
                 />

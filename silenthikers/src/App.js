@@ -7,6 +7,7 @@ import UpcomingHikes from './pages/UpcomingHikes/UpcomingHikes'
 import ContactUs from './pages/ContactUs/ContactUs'
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
+import Admin from './pages/Admin/Admin';
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
       <Route path='/F&Q' element={<Questions />}></Route>
       <Route path='/ContactUs' element={<ContactUs />}></Route >
       </Route>
+      <Route path='/admin/silenthikers123' element={<Admin />}></Route>
     </Routes>
   )
 }

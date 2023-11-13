@@ -13,7 +13,7 @@ const PhotoGallery = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('http://localhost:8080/api/images')
+      .get('https://silent-hikers1-o1fr.onrender.com/api/images')
       .then((response) => {
         setData(response.data);
         setLoading(false);
@@ -68,7 +68,7 @@ const PhotoGallery = () => {
       // Refresh the gallery by fetching the updated data
       setLoading(true);
       axios
-        .get('http://localhost:8080/api/images')
+        .get('https://silent-hikers1-o1fr.onrender.com/api/images')
         .then((response) => {
           setData(response.data);
           setLoading(false);
@@ -104,7 +104,7 @@ const PhotoGallery = () => {
                 <div key={index}>
                   <img
                     className="image-small"
-                    src={`http://localhost:8080/${item.image}`}
+                    src={`https://silent-hikers1-o1fr.onrender.com/${item.image}`}
                     alt={`pic ${index}`}
                     onError={() => {
                       console.log(`Error loading image: ${item.image}`);

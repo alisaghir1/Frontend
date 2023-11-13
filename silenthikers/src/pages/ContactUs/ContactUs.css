@@ -11,7 +11,7 @@
     top: 0;
     object-fit: cover;
     position: absolute;
-    bottom: 0;
+    background-color: black;
 }
 .register-h1{
     font-size: 3.125rem;
@@ -54,15 +54,15 @@
     border: none;
 }
 .register-button{
-    height: fit-content;
+    height: 4vh;
     width: 25%;
     margin: auto;
     font-size: 1.5rem;
-    background-color: #43914686;
+    background-color: #439146c7;
     color: whitesmoke;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.252);
 }
 .register-inputs-label{
     width: 30%;
